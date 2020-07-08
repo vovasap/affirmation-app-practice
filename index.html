@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>_index</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="app">
-            <input class="number" type="number" min="0" value="1">
-            <input class="duration" type="number" min="0" value="60">
-            <button class="btn btn_start-pause">start/pause</button>
-            <button class="btn btn_stop">stop</button>
-            <div class="display">0</div>
+      <div class="app">
+        <fieldset>
+          <legend>Number</legend>
+          <input class="number" type="number" min="0" value="1" />
+        </fieldset>
+        <fieldset>
+          <legend>Duration (seconds)</legend>
+          <input class="duration" type="number" min="0" value="60" />
+        </fieldset>
+
+        <div class="player">
+          <div class="start-pause">
+            <svg width="230" height="230" viewBox="0 0 230 230">
+              <circle
+                cx="115"
+                cy="115"
+                r="105"
+                stroke="#fff"
+                stroke-width="10"
+                fill="transparent"
+              />
+            </svg>
+            <svg width="230" height="230" viewBox="0 0 230 230">
+              <circle
+                cx="115"
+                cy="115"
+                r="105"
+                stroke="#000"
+                stroke-width="5"
+                fill="transparent"
+              />
+            </svg>
+            <img class="start-pause-figure" src="./svg/play.svg" alt="play" />
+          </div>
+          <div class="stop">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                stroke="#fff"
+                stroke-width="2.5"
+                fill="#000"
+              />
+            </svg>
+            <img class="stop-figure" src="./svg/stop.svg" alt="stop" />
+          </div>
         </div>
+        <!-- <button class="btn btn_start-pause">start/pause</button>
+        <button class="btn btn_stop">stop</button>
+         <div class="display">0</div> -->
+      </div>
     </div>
 
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>

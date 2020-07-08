@@ -1,24 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 100vh;
+  height: 100vh;
 }
 
 .app {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-    height: 568px;
+  width: 320px;
+  height: 568px;
 
-    background: #e88;
+  background: #000;
+}
+
+fieldset {
+  width: 90%;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+legend {
+  padding: 0 5px;
+
+  font-size: 20px;
+  color: #fff;
+}
+
+input {
+  width: 100%;
+
+  border: none;
+
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.player {
+  position: relative;
+  width: 230px;
+  height: 230px;
+}
+
+.start-pause {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.start-pause svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.start-pause-figure {
+  position: absolute;
+  transform: translate(-45%, -50%);
+}
+
+.stop {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.stop svg {
+  position: absolute;
+}
+
+.stop-figure {
+  position: absolute;
+  bottom: -70px;
+  right: -70px;
 }
