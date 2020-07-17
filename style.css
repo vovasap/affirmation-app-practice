@@ -64,20 +64,22 @@ input[type='number'] {
   height: 230px;
 }
 
-.start-pause {
+.play-pause {
   position: absolute;
   left: 50%;
   top: 50%;
 }
 
-.start-pause svg {
+.play-pause svg {
   position: absolute;
   transform: translate(-50%, -50%);
+
+  border-radius: 50%;
 }
 
-.start-pause-figure {
+.play-pause-figure {
   position: absolute;
-  transform: translate(-45%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .stop {
@@ -86,12 +88,18 @@ input[type='number'] {
   right: 100px;
 }
 
-.stop svg {
-  position: absolute;
-}
-
 .stop-figure {
   position: absolute;
-  bottom: -70px;
-  right: -70px;
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
 }
+
+.display {
+  color: #fff;
+}
+
+/* .moving-outline circle {
+  transform: rotate(-45deg);
+} */
